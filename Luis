@@ -1,0 +1,2 @@
+print("This is amazing")
+name = input("Introduce tu nombre:")
