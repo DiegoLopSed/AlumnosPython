@@ -1,0 +1,1 @@
+print('Nombre: Alexys \nEdad: 17 \nLenguajes con experiencia: \n Python \n Arduino \n JS \nObjetivo:\n Ser feliz')
