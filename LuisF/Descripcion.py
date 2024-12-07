@@ -1,0 +1,1 @@
+print ("Me llamo Luis Francisco Gómez Pérez, tengo 15 años, llevo 8 meses estudiando programación.")
