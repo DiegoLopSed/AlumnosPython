@@ -30,26 +30,26 @@ class Inventario:
 
 
 class Productos:
-    def __init__(self, codigo, nombre, precio, cantidad,marca,gamma):
+    def __init__(self, codigo, nombre, precio, cantidad,marca,gamma,modelo):
         self.gamma = gamma
         self.marca = marca
         self.codigo = codigo
         self.nombre = nombre
         self.precio = precio
         self.cantidad = cantidad
-
+        self.modelo = modelo
     def __str__(self):
 
-        return f"[{self.codigo}] {self.nombre} - Precio: ${self.precio:.2f}, Cantidad: {self.cantidad}, Marca {self.marca}, Gamma {self.gamma}"
+        return f"[{self.codigo}] {self.nombre} - Precio: ${self.precio:.2f}, Cantidad: {self.cantidad}, Marca {self.marca}, Gamma {self.gamma} , Modelo {self.modelo}"
 
 
 def main():
     inventario = Inventario()
 
     # Crear productos
-    producto1 = Productos("001", "Laptop", 1500.00, 10,"DELL", 'MEDIA')
-    producto2 = Productos("002", "Mouse", 25.50, 50,"HP",'MEDIA_BAJA')
-    producto3 = Productos("003", "Teclado", 45.75, 30,"DELL", 'ALTA')
+    producto1 = Productos("001", "Laptop", 1500.00, 10,"DELL", 'MEDIA','Modelo 1.0')
+    producto2 = Productos("002", "Mouse", 25.50, 50,"HP",'MEDIA_BAJA','Modelo 1.1')
+    producto3 = Productos("003", "Teclado", 45.75, 30,"DELL", 'ALTA','Modelo 1.2')
 
     # Agregar productos al inventario
     inventario.agregar_producto(producto1)
