@@ -43,6 +43,22 @@ class Productos:
         return f"[{self.codigo}] {self.nombre} - Precio: ${self.precio:.2f}, Cantidad: {self.cantidad}, Marca {self.marca}, Gamma {self.gamma}"
 
 
+
+# Clase heredada
+class Electronicos(Productos):
+    def __init__(self, codigo, nombre, precio, cantidad, marca,gamma, wattage):
+        super().__init__(codigo, nombre, precio, cantidad, marca,gamma)
+        self.wattage = wattage  # Potencia en vatios
+
+    def consumo_energetico(self, horas):
+        """Calcula el consumo energético en kWh basado en las horas de uso."""
+        return (self.wattage * horas) / 1000
+
+    def __str__(self):
+        return super().__str__() + f", Potencia: {self.wattage}W"
+
+
+
 def main():
     inventario = Inventario()
 
@@ -50,11 +66,13 @@ def main():
     producto1 = Productos("001", "Laptop", 1500.00, 10,"DELL", 'MEDIA')
     producto2 = Productos("002", "Mouse", 25.50, 50,"HP",'MEDIA_BAJA')
     producto3 = Productos("003", "Teclado", 45.75, 30,"DELL", 'ALTA')
-
+    electronico1 = Electronicos("004","Fuente de poder",2500,"4","Gold 80","Alta",15)
+    
     # Agregar productos al inventario
     inventario.agregar_producto(producto1)
     inventario.agregar_producto(producto2)
     inventario.agregar_producto(producto3)
+    inventario.agregar_producto(electronico1)
 
     # Mostrar inventario
     print("\nInventario actual:")
