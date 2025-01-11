@@ -30,7 +30,7 @@ class Inventario:
 
 
 class Productos:
-    def __init__(self, codigo, nombre, precio, cantidad,marca,gamma):
+    def __init__(self, codigo, nombre, precio, cantidad,marca,gamma,modelo):
         self.gamma = gamma
         self.marca = marca
         self.codigo = codigo
@@ -39,6 +39,7 @@ class Productos:
         self.cantidad = cantidad
 
     def __str__(self):
+        return super().__str__() + f", Potencia: {self.wattage}W"
 
         return f"[{self.codigo}] {self.nombre} - Precio: ${self.precio:.2f}, Cantidad: {self.cantidad}, Marca {self.marca}, Gamma {self.gamma}"
 
