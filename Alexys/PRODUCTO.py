@@ -3,9 +3,10 @@ from abc import ABC , abstractmethod
 class Producto (ABC):
     
 
-    def __init__(self, nombre, precio):
+    def __init__(self, nombre, precio, categoria):
       self._nombre = nombre
       self._precio = precio
+      self._categoria = categoria
       
     @property #get
     def nombre(self):
@@ -20,6 +21,13 @@ class Producto (ABC):
     @precio.setter #set
     def precio (self, nuevo_precio):
        self._precio = nuevo_precio
+
+    @property 
+    def categoria (self):
+       return self._categoria
+    @categoria.setter
+    def categoria (self, nueva_categoria):
+       self._categoria = nueva_categoria
     
     @abstractmethod
     def info(self):

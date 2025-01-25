@@ -1,0 +1,1 @@
+categoria = ['Bolis','Cono','Copas','Litros','Med.litro','Paleta','Pasteles','Sandwich']
