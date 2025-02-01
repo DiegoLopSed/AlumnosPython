@@ -7,19 +7,43 @@ class Producto(ABC):
         self._precio = precio 
         self._categoria = categoria 
         self._stock = stock 
-        self.estado = " Activo"
+        self._estado = "Activo"
 
     @abstractmethod
     def info(self):
         pass
 
     def vender(self, cantidad):
+
         if self._estado != "Activo":
-            print("Activo")
+            print("Lo sentimos, producto descontinuado")
+        else:
+            if cantidad > self._stock:
+                raise ValueError("Stock insuficiente.")
+            else:
+                self._stock -= cantidad
+                print("Producto comprado exitosamente, Quedan: ",self._stock)
 
 
+    def agregar_stock(self, cantidad):
+        if self._estado != "Activo":
+            print("Se requieren más productos.")
+        else:
+            if cantidad < 0:
+                raise ValueError("Agregar más al stock")
+            else:
+                self._stock += cantidad
+                print("Productos agregados al stock.")
+            
+    
+    def acitvo_inactivo(self,cantidad ):
+        if self._estado == "Activo":
+            pass
+        
+           
 
-    @property
+
+    @property 
     def id_producto(self):
         return self._id_producto
     
@@ -32,10 +56,16 @@ class Producto(ABC):
         return self._precio
     
     @property
+    def estado(self):
+        return self._estado
+        
+    @property
     def categoria(self):
         return self._categoria
     
     @property
     def stock(self):
         return self._stock
+    
+    
     
