@@ -67,5 +67,3 @@ class Producto(ABC):
     def stock(self):
         return self._stock
     
-    
-    
