@@ -1,0 +1,19 @@
+#43071Ts
+
+#funcion que resiva cuantos productos voy a aguardar en un inventario y segun esa cantidad soliciar sus nombre una vez
+#obtenidos los nombres guardarlos en un arreglo
+
+def productos():
+    if productos >= 5 :
+        for i in  range:
+            pass
+productos = ['galletas','refrescos','agua','papas','verdudras','cereales','embutidos','jugos','dulces','electrònica']
+
+"""
+Fecha 08/02/25
+Nombre: Luis Francisco Gòmez Pèrez
+Hora: 11:27 Estatus: stand by
+ticket: #43071Ts
+"""
+
+

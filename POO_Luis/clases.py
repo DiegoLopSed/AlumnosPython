@@ -33,4 +33,9 @@ Sabritas.agregar_stock(8)
 
 Sabritas.info()
 
-Doritos.acitvo_inactivo()
+    
+Doritos.change_n()
+
+Doritos.descontinuar()        
+
+Doritos.info()

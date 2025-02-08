@@ -34,15 +34,7 @@ class Producto(ABC):
             else:
                 self._stock += cantidad
                 print("Productos agregados al stock.")
-            
-    
-    def acitvo_inactivo(self,cantidad ):
-        if self._estado == "Activo":
-            pass
         
-           
-
-
     @property 
     def id_producto(self):
         return self._id_producto
@@ -67,3 +59,17 @@ class Producto(ABC):
     def stock(self):
         return self._stock
     
+    def change_n(self):
+        nuevo_nombre = input("Agregue el nuevo nombre:")
+        self._nombre = nuevo_nombre
+
+    def descontinuar(self):
+        if self._estado == "Activo":
+            self._estado = "Descontinuado"
+        else:
+            self._estado = "Activo"
+
+
+    def change_p():
+        pass
+            
