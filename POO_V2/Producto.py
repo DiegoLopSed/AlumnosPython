@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from datetime import datetime
-from dateutil.relativedelta import relativedelta
+
 
 class Producto(ABC):
     def __init__(self, id_producto, nombre, precio, categoria, stock, tiempo_util):
