@@ -53,7 +53,7 @@ class Producto(ABC):
     def caducar(self, meses):
         if meses < 0:
             raise ValueError("El tiempo no puede ser negativo.")
-        self._tiempo_util += relativedelta(months=meses)
+        self._tiempo_util += relativedelta(months=meses) # type: ignore
 
     def subir_precio(self, porcentaje):
         if porcentaje <= 0:
