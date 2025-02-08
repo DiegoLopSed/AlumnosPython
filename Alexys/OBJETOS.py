@@ -16,5 +16,5 @@ Colombina = Helados('Colombina',32, categoria[5],20)
 Casero = Helados ('Casero', 28, categoria[7],15)
 
 Oreo.info()
-Oreo.change_status()
+Oreo.cambio_precio()
 Oreo.info()

@@ -52,9 +52,35 @@ class Producto (ABC):
         pass
     
     def cambio_precio(self):
-        nuevo_precio = (self._precio * 10) /  100
-        print(f'Cambio de precio: {nuevo_precio}')
-       # self._precio raise += nuevo_precio()
+        UP_DOWN = ''
+        while UP_DOWN != '3':
+         print('Aumentar/Disminuir precio/salir')
+         UP_DOWN = input('1/2/3:')
+         if UP_DOWN == '1':
+          porcentaje = int(input('Porcentaje a aumentar:'))
+          if porcentaje < 1:
+            print('Ingrese un numero valido')
+            raise ValueError("No se admiten numeros negativos o menores a 1")
+          else:
+               nuevo_precio = (self._precio * porcentaje) / 100
+               print(f'Cambio de precio: {nuevo_precio}')
+               self._precio += nuevo_precio
+               print(f'Nuevo precio: {self._precio}')
+
+         elif UP_DOWN == '2':
+           porcentaje = int(input('Porcentaje a disminuir:'))
+           if porcentaje < 1:
+            print('Ingrese un numero valido')
+            raise ValueError("No se admiten numeros negativos o menores a 1")
+           else:
+                nuevo_precio = self._precio(porcentaje/100)
+                print(f'Cambio de precio: {nuevo_precio}')
+                self._precio -= nuevo_precio
+                print(f'Nuevo precio: {self._precio}')
+
+           
+      
+        # self._precio raise += nuevo_precio()
         # print(f'Precio nuevo: {precio_final}')
 
     def venta (self,cantidad):
@@ -81,7 +107,9 @@ class Producto (ABC):
         elif self._estado == 'Inactivo':
            nuevo_estado = 'Activo'
            self._estado = nuevo_estado
-    
+    def ch_name(self):
+       nombre_nuevo = input('Asigne nombre del producto:')
+       self._nombre = nombre_nuevo
 
 
 
