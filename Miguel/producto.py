@@ -45,6 +45,7 @@ class Producto (ABC):
    def info(self):
       pass
    
+<<<<<<< HEAD:Miguel/producto.py
    def vender_producto(self,  stock):
 
       if stock <= 0:
@@ -56,3 +57,58 @@ class Producto (ABC):
             print('Compra exitosa')
             self._stock -= stock 
          
+=======
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+>>>>>>> 353c8f146181707cb04976f371d07eb32e0db673:Miguel/clase_abc.py

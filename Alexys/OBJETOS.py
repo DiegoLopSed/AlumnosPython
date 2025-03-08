@@ -20,3 +20,10 @@ Oreo.change_status()
 Oreo.info()
 Oreo.cambio_precio()
 Oreo.info()
+
+'''
+pida nombre, numero de stock
+nombre no vacio
+intento infinito
+no acepte num negativos
+'''
