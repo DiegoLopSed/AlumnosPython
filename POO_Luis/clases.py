@@ -20,7 +20,7 @@ Ruffles = papas(88,'ruffles queso',22,categoria[5],98)
 Flaming_hot= papas(74,'cheetos flaming hot',23,categoria[0],34) 
 
 #carrito = [chips,cheetos,Doritos,Sabritas,Ruffles,Flaming_hot]
-
+'''
 Doritos.info()
 
 Doritos.vender(6)
@@ -39,3 +39,4 @@ Doritos.change_n()
 Doritos.descontinuar()        
 
 Doritos.info()
+'''

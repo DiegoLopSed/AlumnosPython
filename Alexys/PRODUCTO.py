@@ -66,6 +66,7 @@ class Producto(ABC):
             else:
                 print("Producto comprado exitosamente")
                 self._stock -= cantidad
+                return True
 
    def add(self, cantidad):
         if cantidad < 0:

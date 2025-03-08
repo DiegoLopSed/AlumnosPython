@@ -45,6 +45,19 @@ class Producto (ABC):
    def info(self):
       pass
    
+<<<<<<< HEAD:Miguel/producto.py
+   def vender_producto(self,  stock):
+
+      if stock <= 0:
+         print ('Introduce un munero valido')
+      else: 
+         if stock > self._stock:
+            print('Stock insuficiente')
+         else:
+            print('Compra exitosa')
+            self._stock -= stock 
+         
+=======
    
 
 
@@ -98,3 +111,4 @@ class Producto (ABC):
 
 
    
+>>>>>>> 353c8f146181707cb04976f371d07eb32e0db673:Miguel/clase_abc.py
