@@ -11,8 +11,6 @@ class tel (Producto):
 
 
 
-#categoria = gama
-
 f5 = tel('Xiaomi Poco F5 pro',10000 ,'media alta',30,'Snapdragon 8+ gen1' )
 Iphone_16 = tel('Iphone 16 Pro Max',40000 ,'alta',30,'A18 Bionic' )
 S25_Ultra = tel('Samsung Galaxy S25 Ultra',30000 ,'alta',30,'Snapdragon 8 elite For Galaxy' )
