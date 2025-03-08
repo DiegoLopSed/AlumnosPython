@@ -45,4 +45,14 @@ class Producto (ABC):
    def info(self):
       pass
    
-   
+   def vender_producto(self,  stock):
+
+      if stock <= 0:
+         print ('Introduce un munero valido')
+      else: 
+         if stock > self._stock:
+            print('Stock insuficiente')
+         else:
+            print('Compra exitosa')
+            self._stock -= stock 
+         
