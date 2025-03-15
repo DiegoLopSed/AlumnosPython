@@ -1,4 +1,5 @@
 from OBJETOS import *
+from PRODUCTO import *
 
 class CARRITO:
 
@@ -33,6 +34,7 @@ class CARRITO:
         
         if  producto in self.productos:
             index = self.productos.index(producto)
+            producto.add(self.cantidad[index])
             self.productos.remove(producto)
             self.cantidad.remove(self.cantidad[index])
             print(f'Producto:',producto.nombre, 'ha sido eliminado')
