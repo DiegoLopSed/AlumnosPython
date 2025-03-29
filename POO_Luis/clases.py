@@ -19,6 +19,11 @@ Sabritas = papas(10,'sabritas limon',19,categoria[3],99)
 Ruffles = papas(88,'ruffles queso',22,categoria[5],98)
 Flaming_hot= papas(74,'cheetos flaming hot',23,categoria[0],34) 
 
+# Nuevos productos
+Takis = papas(45,'takis fuego',25,categoria[6],50)
+Pringles = papas(67,'pringles original',28,categoria[5],75)
+Lays = papas(89,'lays classic',21,categoria[3],60)
+
 #carrito = [chips,cheetos,Doritos,Sabritas,Ruffles,Flaming_hot]
 '''
 Doritos.info()
