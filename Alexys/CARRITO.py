@@ -25,7 +25,7 @@ class CARRITO:
             print('Carrito: \n')
             i = 0
             for producto in self.productos:
-                print(f'Cantidad',self.cantidad[i],'Producto:',producto.nombre,'$',producto.precio)
+                print(f'Cantidad:',self.cantidad[i],'Producto:',producto.nombre,'$',producto.precio)
                 i+= 1
             print('==========================')
 
@@ -47,7 +47,7 @@ class CARRITO:
         print('El carrito se ha vaciado.')
 
 carrito1 = CARRITO('Alexys')
-
+'''
 Oreo.info()
 Dracula.info()
 carrito1.ls_object()
@@ -59,4 +59,5 @@ carrito1.ls_object()
 carrito1.clear_object()
 Oreo.info()
 Dracula.info()
+'''
 
