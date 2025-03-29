@@ -5,7 +5,7 @@ class Producto:
       self._nombre = nombre
       self._precio = precio
       self._categoria = categoria
-      self._estado = 'Activo'
+      self._status = 'Activo'
       self._stock = stock
          
    @property #get
@@ -37,11 +37,11 @@ class Producto:
       self._categoria = nueva_categoria
       
    @property
-   def estado(self):
-      return self._estado
-   @estado.setter
-   def estado(self, nuevo_estado):
-      self._estado =  nuevo_estado
+   def status(self):
+      return self._status
+   @status.setter
+   def status(self, nuevo_status):
+      self._status =  nuevo_status
          
    @abstractmethod
    def info(self):
@@ -63,6 +63,16 @@ class Producto:
       if stock <= 0:
          print ('Introduce un munero valido')
       else: 
-            stock += self._stock
+            self._stock += stock 
             print('Añadido Correctamente')
                
+   def cambiar_precio_porcentaje(self, porcentaje):
+
+         aumento = 1 + (porcentaje / 100)
+         precio_anterior = self._precio
+         self._precio = self._precio * aumento
+         print('Precio actualizado correctamente')
+
+   def cambiar_status(self, nuevo_status):
+      self._status = nuevo_status
+      print('Status actualizado correctamente')
